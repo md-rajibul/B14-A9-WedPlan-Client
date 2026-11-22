@@ -78,11 +78,11 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#fffaf7] text-[#352421]">
       <header className="sticky top-0 z-30 border-b border-rose-100 bg-white/95 backdrop-blur">
-        <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5">
+        <nav className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-5 sm:flex-row sm:px-5">
           <a href="#" className="text-3xl font-bold text-rose-700">
             WedPlan<span className="text-amber-600">.</span>
           </a>
-          <div className="flex items-center gap-4 text-sm font-medium sm:gap-7">
+          <div className="flex flex-wrap items-center justify-center gap-4 text-sm font-medium sm:gap-7">
             <a href="#services" className="hover:text-rose-700">Services</a>
             <a href="#about" className="hover:text-rose-700">About</a>
             <a href="#contact" className="hover:text-rose-700">Contact</a>
