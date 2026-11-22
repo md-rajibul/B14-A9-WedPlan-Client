@@ -42,7 +42,7 @@ const services = [
     category: "Makeup",
     location: "Dhaka",
     price: 12000,
-    image: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=900",
+    image: "https://images.unsplash.com/photo-1583784561105-a674080f391e?w=900",
   },
   {
     id: 6,
@@ -50,7 +50,7 @@ const services = [
     category: "Fashion",
     location: "Rajshahi",
     price: 18000,
-    image: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=900",
+    image: "https://images.unsplash.com/photo-1591221662157-6f62de5508eb?w=900",
   },
 ];
 
