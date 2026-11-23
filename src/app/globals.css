@@ -154,3 +154,67 @@ a:focus-visible,button:focus-visible{outline:3px solid #e8abc1;outline-offset:2p
   .panel{padding:19px}
   .footer-grid{gap:12px}
 }
+
+/* Prevent page-level horizontal scrolling */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+/* Allow responsive children to shrink */
+.container,
+.navbar,
+.dashboard-main,
+.card-content,
+.auth-card,
+.panel {
+  min-width: 0;
+}
+
+/* Responsive layout for mobile devices */
+@media (max-width: 680px) {
+  .container {
+    width: calc(100% - 28px);
+    max-width: 100%;
+  }
+
+  .brand {
+    font-size: 1.35rem;
+  }
+
+  .cards-grid,
+  .three-grid,
+  .category-grid,
+  .filters,
+  .footer-grid,
+  .stat-grid,
+  .details-grid,
+  .form-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .service-card,
+  .card-content,
+  .auth-card,
+  .panel {
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .card-content h3,
+  .dash-header h1 {
+    overflow-wrap: anywhere;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2rem, 9vw, 2.65rem);
+  }
+
+  .table-wrap,
+  .sidebar {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
